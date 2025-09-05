@@ -1,0 +1,69 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    gap: 10px 20px;
+    row-gap: 10px;
+    column-gap: 20px;
+}
+
+.item {
+    flex-grow: 1;
+}
+
+.item-2 {
+    flex-grow: 2;
+}
+
+
+/* Universal */
+* {
+    box-sizing: border-box;
+}
+
+/* Typer or Tag */
+p {
+    margin-block: 1.5rem;
+}
+
+/* Classname */
+.class {
+    text-decoration: underline;
+}
+
+/* ID */
+#id {
+    font-family: monospace;
+}
+
+/* Relational */
+li:has(a) {
+    display: flex;
+}
+
+/* Descendant */
+header h1 {
+    /* Selects all Heading 1  */
+}
+
+/* Child */
+header > h1 {
+    /* Selects all Heading 1 */
+}
+
+/* General sibling */
+h1 ~ p{
+    /* Selects a Paragraph as */
+}
+
+/* Adjacent sibling */
+h1 + p{
+    /* Selects a Paragraph if */
+}
+
+/* Chained */
+h1, p{
+    /* Selects both elements. */
+}
